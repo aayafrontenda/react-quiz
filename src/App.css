@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color:#4776E6;
+}
+
+.question {
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* padding-left: 10px; */
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+ul li {
+  text-indent: 10px; /* отдаляем текст от точки finally */
+}
+
+.answer:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.result, .game { /* два класса независимых друг от друга разделяем запятой, тут если не разделять я бы выбрал
+  элемент класса game внутри класса result */
+  background-color: whitesmoke;
+  border-radius: 50px;
+  width: 500px;
+  height: 100%;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.smaller-text {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.game {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.progress {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.gradient {
+  background: #4776E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#try-again {
+  color: white;
+  background-color:rgba(233, 44, 192, 0.5);
+  border-radius: 40px;
+  margin-top: 10px;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#congrats-pic {
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  margin: 30.5px 3.5px 0px 5.5px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

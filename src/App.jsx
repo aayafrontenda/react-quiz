@@ -5,7 +5,7 @@ import './App.css'
 function Result({ correct, tryAgain, questions }) {
   return (
     <div className="result">
-      <img src={require('/hooray.png')} id='congrats-pic'></img>
+      <img src={require('./hooray.png')} id='congrats-pic'></img>
       <h1 class='smaller-text'>You have <b>{correct}</b> answers out of <b>{questions.length}</b>!</h1>
       <button id="try-again" onClick={tryAgain}>Try again</button>
     </div>
